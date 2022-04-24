@@ -1,0 +1,953 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+text-align: center;
+background-color: lightgray;
+width: 100%;
+}
+
+.prviDiv {
+    display: inline-block;
+    width: 1250px;
+    height: 850px;
+    border: 2px solid black;
+    
+
+}
+
+header {
+    position: fixed;
+    border: 2px solid black;
+    width: 1200px;
+    margin-left: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: gray;
+    
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    background-color: blue;
+    border-radius: 6px;
+    border: 3px white solid;
+    width: 100px;
+    height: 60px;    
+}
+
+nav ul li a {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    margin: 0px; 
+}
+
+.container {
+    display: flex;
+    margin: auto;
+    margin-top: 130px;
+    width: 1200px;
+    height: 580px;
+    border: 2px solid black;
+
+}
+
+div.container aside {
+    display: inline-block;
+    width: 20%;
+    height: 560px;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.section {
+    display: inline-block;
+    border: 2px solid black; 
+    width: 200px;
+    margin: auto;
+    margin-top: 12px;
+    
+}
+
+#sec1 {
+    height: 30%;
+}
+
+#sec2 {
+    height: 40%;
+}
+
+#sec3 {
+    height: 20%;
+}
+
+main {
+    display: inline-block;
+    width: 78%;
+    height: 560px;
+    margin: 10px;
+    margin-left: 0;
+}
+
+footer {
+    width: 1200px;
+    margin: auto;
+    margin-top: 15px;
+    height: 100px;
+    border: 2px solid black;
+}
+
+div.gridCont {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 5px;
+    column-gap: 5px;
+   
+}
+.gridItem {
+    border: 2px solid black;
+    background-color: rgb(230, 234, 143);
+}
+
+.imgC {
+    width: 140px;
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+div.gridItem p {
+    padding-top: 10px;
+    margin: 10px;
+    
+}
+
+div.gridItem button {
+    width: 100px;
+    height: 50px;
+    color: white;
+    background-color: blue;
+    border: 3px white solid;
+    border-radius: 5px;
+}
+
+div.gridItem button:hover {
+    background-color: red;
+
+}
+
+#poslednjiDiv {
+  text-align: right;
+  position: sticky;
+  top: 500px;
+  margin-right: 40px;
+}
+
+#butV {
+    background: black;
+    opacity: 0.7;
+    border-radius: 50%;
+    border: none;
+}
+
+
+label {
+    display: inline-block;
+    text-align: left;
+    width: 100px;
+    margin-right: 20px;
+}
+
+section.section p {
+
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+section.section button {
+    margin-top: 5px;
+}
+
+#butV:hover {
+    opacity: 1;
+}
+
+section p:first-child {
+    color: blue;
+    font-weight: bolder;
+}
+
+#forma1 label:first-of-type {
+    color: red;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: darkblue;
+}
+
+header nav button {
+    display: none;
+}
+
+.novi-filter {
+
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px) {
+   
+    header {
+        width: 90%;
+        /* min-width: 278px; */
+        margin: auto;
+        margin-top: 2%;
+        /* margin-left: 4%; */
+    }
+    
+    header nav {
+        text-align: right;
+        width: 100%;
+     
+        
+    }
+    header nav ul {
+        /* display: none; */
+        display: flex;
+        justify-content: space-between;
+        margin-right: 5%;
+    }
+
+    header nav ul li {
+        text-align: center;
+        width: 20%;
+    }
+
+
+
+    header nav button {
+        display: none;
+        margin: 5%;
+    }
+    
+    
+    .prviDiv {
+        
+        width: 90%;
+        min-width: 278px;
+        height: 98%;
+    }
+    .bb {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .container {
+       display: inline-block;
+       grid-template-columns: auto;
+        margin: auto;
+        margin-top:18%;
+        width: 90%;
+        min-width: 800px;
+        border: 2px solid black;
+        height: 95%;
+    
+    }
+    
+    div.container aside {
+        display: none;
+    }
+    
+    .container .novi-filter {
+        margin: auto;
+        margin-top: 2%;
+        width: 90%;
+        height: 50px;
+        display: block;
+        background-color: orange;
+       
+    }
+    
+    .novi-filter button {
+    
+    margin-top: 2%;
+    
+    
+    }
+    main {
+        display: block;
+        width: 98%;
+        height: 750px;
+        /* margin: 10px; */
+        margin-left: 0;
+    }
+    
+    footer {
+        display: inline-block;
+        width: 98%;
+        margin: auto;
+        margin-top: 30px;
+        height: 100px;
+        border: 2px solid black;
+        min-width: 270px;
+    }
+    
+    div.gridCont {
+        display:flex;
+        width: 100%;
+        height: 98%;
+        flex-flow: row wrap;
+        
+        
+        margin-left: 1%;
+       
+    }
+    
+    img.imgC {
+        width: 50%;
+        float: left;
+       
+    }
+    
+    
+    .gridItem {
+        border-radius: 2%;
+        background-color: rgb(230, 234, 143);
+        border: none;
+        height: 220px;
+        width: 30%;
+        min-width: 255px;
+        margin: auto;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    
+    
+    
+    div.gridItem p {
+        padding-top: 10px;
+        margin: 10px;
+        
+    }
+    
+    div.gridItem button {
+        width: 100px;
+        height: 50px;
+        color: white;
+        background-color: blue;
+        border: 3px white solid;
+        border-radius: 5px;
+    }
+    
+    .div-r {
+        box-sizing: border-box;
+        display: block;
+        padding: 10px;
+    }
+    
+    #poslednjiDiv {
+        text-align: right;
+        position: fixed;
+        display: block;
+        width: 100%;
+        text-align: right;
+        top: 290px;
+        right: 1px;
+        margin-right: 0%;
+      }
+      
+      #butV {
+          background: none;
+          opacity: 0.7;
+          border-radius: 50%;
+          border: none;
+          width: 70px;
+          z-index: 99;
+          /* right: 10px; */
+          
+      }
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:922px) {
+   
+    header {
+        width: 90%;
+        /* min-width: 278px; */
+        margin: auto;
+        margin-top: 2%;
+        /* margin-left: 4%; */
+    }
+    
+    header nav {
+        text-align: right;
+        width: 100%;
+     
+        
+    }
+    header nav ul {
+        /* display: none; */
+        display: flex;
+        justify-content: space-between;
+        margin-right: 5%;
+    }
+
+    header nav ul li {
+        text-align: center;
+    }
+
+
+
+    header nav button {
+        display: none;
+        margin: 5%;
+    }
+    
+    
+    .prviDiv {
+        
+        width: 90%;
+        min-width: 278px;
+        height: 98%;
+    }
+    .bb {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .container {
+       display: inline-block;
+        margin: auto;
+        margin-top:18%;
+        width: 90%;
+        min-width: 540px;
+        border: 2px solid black;
+        height: 95%;
+    
+    }
+    
+    div.container aside {
+        display: none;
+    }
+    
+    .container .novi-filter {
+        margin: auto;
+        margin-top: 2%;
+        width: 90%;
+        height: 50px;
+        display: block;
+        background-color: orange;
+       
+    }
+    
+    .novi-filter button {
+    
+    margin-top: 3%;
+    
+    
+    }
+    main {
+        display: block;
+        width: 98%;
+        height: 1200px;
+        /* margin: 10px; */
+        margin-left: 0;
+    }
+    
+    footer {
+        display: inline-block;
+        width: 98%;
+        margin: auto;
+        margin-top: 30px;
+        height: 100px;
+        border: 2px solid black;
+        min-width: 270px;
+    }
+    
+    div.gridCont {
+        display:flex;
+        width: 100%;
+        height: 98%;
+        flex-flow: raw wrap;
+        
+        
+        margin-left: 1%;
+       
+    }
+    
+    img.imgC {
+        width: 50%;
+        float: left;
+       
+    }
+    
+    
+    .gridItem {
+        border-radius: 2%;
+        background-color: rgb(230, 234, 143);
+        border: none;
+        height: 220px;
+        width: 45%;
+        min-width: 255px;
+        margin: auto;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    
+    
+    
+    div.gridItem p {
+        padding-top: 10px;
+        margin: 10px;
+        
+    }
+    
+    div.gridItem button {
+        width: 100px;
+        height: 50px;
+        color: white;
+        background-color: blue;
+        border: 3px white solid;
+        border-radius: 5px;
+    }
+    
+    .div-r {
+        box-sizing: border-box;
+        display: block;
+        padding: 10px;
+    }
+    
+    #poslednjiDiv {
+        text-align: right;
+        position: fixed;
+        display: block;
+        width: 100%;
+        text-align: right;
+        top: 290px;
+        right: 1px;
+        margin-right: 0%;
+      }
+      
+      #butV {
+          background: none;
+          opacity: 0.7;
+          border-radius: 50%;
+          border: none;
+          width: 70px;
+          z-index: 99;
+          /* right: 10px; */
+          
+      }
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:576px) {
+   
+    header {
+        width: 90%;
+        /* min-width: 278px; */
+        margin: auto;
+        margin-top: 2%;
+        /* margin-left: 4%; */
+    }
+    
+    header nav {
+        text-align: right;
+        width: 100%;
+     
+        
+    }
+    header nav ul {
+        display: none;
+    }
+    header nav button {
+        display: inline-block;
+        margin: 5%;
+    }
+    
+    
+    .prviDiv {
+        
+        width: 90%;
+        min-width: 278px;
+        height: 98%;
+    }
+    .bb {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .container {
+       display: inline-block;
+        margin: auto;
+        margin-top:18%;
+        width: 90%;
+        min-width: 270px;
+        border: 2px solid black;
+        height: 95%;
+    
+    }
+    
+    div.container aside {
+        display: none;
+    }
+    
+    .container .novi-filter {
+        margin: auto;
+        margin-top: 2%;
+        width: 90%;
+        height: 50px;
+        display: block;
+        background-color: orange;
+       
+    }
+    
+    .novi-filter button {
+    
+    margin-top: 3%;
+    
+    
+    }
+    main {
+        display: block;
+        width: 98%;
+        height: 2200px;
+        /* margin: 10px; */
+        margin-left: 0;
+    }
+    
+    footer {
+        display: inline-block;
+        width: 98%;
+        margin: auto;
+        margin-top: 30px;
+        height: 100px;
+        border: 2px solid black;
+        min-width: 270px;
+    }
+    
+    div.gridCont {
+        display: grid;
+        width: 100%;
+        height: 98%;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(9, 180px);
+        row-gap: 3%;
+        margin-left: 1%;
+       
+    }
+    
+    img.imgC {
+        width: 50%;
+        float: left;
+       
+    }
+    
+    
+    .gridItem {
+        border-radius: 2%;
+        background-color: rgb(230, 234, 143);
+        border: none;
+        height: 220px;
+        width: 95%;
+        min-width: 255px;
+        margin: auto;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    
+    
+    
+    div.gridItem p {
+        padding-top: 10px;
+        margin: 10px;
+        
+    }
+    
+    div.gridItem button {
+        width: 100px;
+        height: 50px;
+        color: white;
+        background-color: blue;
+        border: 3px white solid;
+        border-radius: 5px;
+    }
+    
+    .div-r {
+        box-sizing: border-box;
+        display: block;
+        padding: 10px;
+    }
+    
+    #poslednjiDiv {
+        text-align: right;
+        position: fixed;
+        display: block;
+        width: 100%;
+        text-align: right;
+        top: 290px;
+        right: 1px;
+        margin-right: 0%;
+      }
+      
+      #butV {
+          background: none;
+          opacity: 0.7;
+          border-radius: 50%;
+          border: none;
+          width: 70px;
+          z-index: 99;
+          /* right: 10px; */
+          
+      }
+    
+    }
+
+
+
+
+
+
+
+
+
+@media (max-width:390px) {
+   
+header {
+    width: 81%;
+    /* min-width: 278px; */
+    margin: auto;
+    margin-top: 2%;
+    margin-left: 4%;
+}
+
+header nav {
+    text-align: right;
+    width: 100%;
+    
+}
+header nav ul {
+    display: none;
+}
+header nav button {
+    display: inline-block;
+    margin: 5%;
+}
+
+
+.prviDiv {
+    
+    width: 90%;
+    min-width: 278px;
+    height: 1980px;
+}
+.bb {
+    width: 20px;
+    height: 20px;
+}
+
+.container {
+   display: grid;
+   grid-template-columns: auto;
+    margin: auto;
+    margin-top: 80px;
+    width: 90%;
+    min-width: 270px;
+    border: 2px solid black;
+    height: 1880px;
+
+}
+
+div.container aside {
+    display: none;
+}
+
+.container .novi-filter {
+    margin: auto;
+    margin-top: 2%;
+    width: 90%;
+    height: 50px;
+    display: block;
+    background-color: orange;
+   
+}
+
+.novi-filter button {
+
+margin-top: 5%;
+
+
+}
+main {
+    display: block;
+    width: 98%;
+    height: 1800px;
+    /* margin: 10px; */
+    margin-left: 0;
+}
+
+footer {
+    display: inline-block;
+    width: 98%;
+    margin: auto;
+    margin-top: 30px;
+    height: 100px;
+    border: 2px solid black;
+    min-width: 270px;
+}
+
+div.gridCont {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(9, 180px);
+    row-gap: 1%;
+    margin-left: 1%;
+   
+}
+
+img.imgC {
+    width: 50%;
+    float: left;
+   
+}
+
+
+.gridItem {
+    border-radius: 2%;
+    background-color: rgb(230, 234, 143);
+    border: none;
+    height: 180px;
+    width: 95%;
+    min-width: 255px;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+
+
+div.gridItem p {
+    padding-top: 10px;
+    margin: 10px;
+    
+}
+
+div.gridItem button {
+    width: 100px;
+    height: 50px;
+    color: white;
+    background-color: blue;
+    border: 3px white solid;
+    border-radius: 5px;
+}
+
+.div-r {
+    box-sizing: border-box;
+    display: block;
+    padding: 10px;
+}
+
+#poslednjiDiv {
+    text-align: right;
+    position: fixed;
+    display: block;
+    width: 100%;
+    text-align: right;
+    top: 290px;
+    right: 1px;
+    margin-right: 0%;
+  }
+  
+  #butV {
+      background: none;
+      opacity: 0.7;
+      border-radius: 50%;
+      border: none;
+      width: 70px;
+      z-index: 99;
+      /* right: 10px; */
+      
+  }
+
+}
+
+
+    
